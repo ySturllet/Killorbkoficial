@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kill or Be Killed</title>
+  <link rel="manifest" href="/manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function() {
+          console.log('Service Worker registrado com sucesso!');
+        });
+    }
+  </script>
+</head>
+<body>
+  <h1>Kill or Be Killed - PWA Pronto!</h1>
+</body>
+</html>
