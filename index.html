@@ -1,1 +1,39 @@
-index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kill or Be Killed - Oficial</title>
+
+  <!-- Ícone e Manifesto PWA -->
+  <link rel="manifest" href="/manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registrado com sucesso!'));
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #ff3366;
+    }
+    a {
+      color: #00f7ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Kill or Be Killed</h1>
+  <p>Site oficial do jogo inspirado na série Round 6</p>
+  <p>Desenvolvido por Victor Deporte</p>
+  <p><a href="https://instagram.com/victor_slix">@victor_slix</a></p>
+</body>
+</html>
